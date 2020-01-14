@@ -51,7 +51,7 @@
                             <td>@product.ProductDescription</td>
                             <td>@product.Price DKK</td>
                             <td>
-                                <form method="post" asp-controller="Home" asp-route-id="@product.Id" asp-action="">
+                                <form method="post" asp-controller="Products" asp-route-id="@product.Id" asp-action="Buy">
                                     <button type="submit" class="btn btn-primary"> Køb </button>
                                 </form>
                             </td>

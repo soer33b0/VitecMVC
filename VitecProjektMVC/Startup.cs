@@ -32,9 +32,10 @@ namespace VitecProjektMVC
                 DeveloperExceptions = configuration.GetValue<bool>("FeatureToggles:DeveloperExceptions")
             });
 
-           
+            services.AddAntiforgery(options => options.HeaderName = "X-CSRF-TOKEN");
 
-            services.AddMvc();
+            services.AddMvc(options =>
+                options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
