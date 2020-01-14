@@ -28,7 +28,7 @@ namespace VitecMVC.Controllers
             IEnumerable<Product> products = new List<Product>();
             using (WebClient client = new WebClient())
             {
-                var json = client.DownloadString("https://vitecmvc-api.azurewebsites.net/api/products");
+                var json = client.DownloadString("http://localhost:44365/api/products");
                 products = Newtonsoft.Json.JsonConvert.DeserializeObject<IEnumerable<Product>>(json);
             }
             return View(products);

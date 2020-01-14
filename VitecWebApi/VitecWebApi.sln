@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VitecWebApi", "VitecWebApi.csproj", "{5DBF4183-0BB9-46A0-AF8D-5A4C6F94CEE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DBF4183-0BB9-46A0-AF8D-5A4C6F94CEE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DBF4183-0BB9-46A0-AF8D-5A4C6F94CEE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DBF4183-0BB9-46A0-AF8D-5A4C6F94CEE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DBF4183-0BB9-46A0-AF8D-5A4C6F94CEE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E69A51B7-AF10-43D2-BB5B-61AC22AB29FB}
+	EndGlobalSection
+EndGlobal
