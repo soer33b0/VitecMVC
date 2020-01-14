@@ -27,6 +27,7 @@ namespace VitecProjektMVC
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // Ny instans hver gang service bliver requested
             services.AddTransient<FeatureToggles>(x => new FeatureToggles
             {
                 DeveloperExceptions = configuration.GetValue<bool>("FeatureToggles:DeveloperExceptions")

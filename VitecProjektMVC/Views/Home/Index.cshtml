@@ -1,4 +1,6 @@
 ﻿@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
+
+
 @{
     Layout = "_Layout";
 }
@@ -9,6 +11,8 @@
 
         <div class="text-center">
             <h1 class="display-4">Fordi alle skal have en chance</h1>
+            <vc:productview />
+
             <p>Se vores produkter <a href="@Url.Action("Index", "Products")">her</a>.</p>
 
             <div class="row mt-4 ">
@@ -52,6 +56,7 @@
                     <h5 class="card-title">Kontakt</h5>
                     <p class="card-text">Har du spørgsmål?</p>
                     <a href="#" class="btn btn-primary">Kontakt os her</a>
+                   
                 </div>
 
             </div>
