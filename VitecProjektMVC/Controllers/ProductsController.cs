@@ -58,6 +58,11 @@ namespace VitecProjektMVC.Controllers
 
                 //HTTP POST
                 product.Id = 0;
+                if (!TryValidateModel(product, nameof(ProductItem)))
+                {
+                    ModelState.AddModelError(string.Empty, "Produkt kunne ikke oprettes pga. en fejl.");
+                }
+
                 var response = httpClient.PostAsJsonAsync(uri, product).Result;
                 
                 if (response.IsSuccessStatusCode)
@@ -66,7 +71,6 @@ namespace VitecProjektMVC.Controllers
                 }
             }
 
-            ModelState.AddModelError(string.Empty, "Produkt kunne ikke oprettes pga. en fejl.");
 
             return View();
         }
