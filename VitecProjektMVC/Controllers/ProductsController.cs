@@ -66,7 +66,7 @@ namespace VitecProjektMVC.Controllers
                 }
             }
 
-            ModelState.AddModelError(string.Empty, "Server Error. Please contact administrator.");
+            ModelState.AddModelError(string.Empty, "Produkt kunne ikke oprettes pga. en fejl.");
 
             return View();
         }
